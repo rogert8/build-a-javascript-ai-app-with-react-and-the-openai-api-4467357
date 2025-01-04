@@ -76,7 +76,14 @@ const PromptToLocation = (prompt) => {
           return `${promptRes.city},${promptRes.country}`;
         }
       };
-      console.log(locationString());
+      const promptData = {
+        locationString: locationString(),
+        units: promptRes.unit,
+        country: promptRes.country,
+        USstate: promptRes.USstate,
+      };
+      // console.log(locationString());
+      return promptData
     })
     .catch((error) => {
       console.log("Error:", error);
