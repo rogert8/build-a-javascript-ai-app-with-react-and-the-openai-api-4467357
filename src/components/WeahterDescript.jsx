@@ -15,7 +15,7 @@ const WeatherDescript = (prompt, weatherData) => {
   )}`;
 
   const data = {
-    model: "gpt-4-0613",
+    model: "gpt-4-turbo-2024-04-09",
     messages: [
       { role: "system", content: sysMsg },
       { role: "user", content: newPrompt },
