@@ -4,7 +4,8 @@ const PromptToLocation = (prompt) => {
   const url = "https://api.openai.com/v1/chat/completions";
 
   const data = {
-    model: "gpt-3.5-turbo-0613",
+    // model: "gpt-3.5-turbo-0125",
+    model: "gpt-4-0613",
     messages: [{ role: "user", content: prompt }],
     functions: [
       {
@@ -81,8 +82,8 @@ const PromptToLocation = (prompt) => {
         locationString: locationString(),
         units: promptRes.unit,
         country: promptRes.country,
-        USstate: promptRes.USstate
-      }
+        USstate: promptRes.USstate,
+      };
 
       return promptData;
     })
