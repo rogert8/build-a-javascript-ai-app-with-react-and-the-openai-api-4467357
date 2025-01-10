@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import LocationToCoordinates from "./LocationToCoordinates";
 import WeatherData from "./WeatherData";
 import PromptToLocation from "./PromptToLocation";
-import WeatherDescript from "./WeahterDescript";
+import WeatherDescript from "./WeatherDescript";
 
 const useApiRequests = (prompt) => {
   const [error, setError] = useState(null);
